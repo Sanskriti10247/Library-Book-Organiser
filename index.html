@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library Organizer</title>
+    <!-- Link to external stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Book Recommendation & Library Organizer</h1>
+    </header>
+    
+    <main>
+         <!-- Section for searching books -->
+        <section class="search-section">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search for books...">
+                <button type="submit">🔍 Search</button>
+            </form>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <select id="author-filter">
+                <option value="">Filter by Author</option>
+                <!-- The authors will be dynamically added here -->
+            </select>
+
+            <select id="genre-filter">
+                <option value="">Filter by Genre</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="romance">Romance</option>
+                <option value="science">Science</option>
+                <!-- Add more genres as needed -->
+            </select>
+        </section>
+
+        <!-- Section for displaying search results -->
+        <section id="results-container" class="results-container"></section>
+        
+          <!-- Section for user's personal library -->
+        <section class="library-section">
+            <h2>My Library</h2>
+            <div id="library-container" class="library-container"></div>
+        </section>
+    </main>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
